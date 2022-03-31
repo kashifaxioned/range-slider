@@ -84,6 +84,7 @@ sub { bottom: -.25em; }
 /*for all*/
 body {
   box-sizing: border-box;
+  background-color: #d7dfeb;
   font-family: sans-serif;
 }
 
@@ -120,9 +121,50 @@ li {
   main styling starts here
 =================================*/
 
+h2 {
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
 
+.main-div{
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.range-slider-div {
+  padding: 40px 0;
+  position: relative;
+}
 
+label {
+  box-sizing: border-box;
+  width: 80px;
+  padding: 5px 0;
+  position: absolute;
+  top: 0;
+  left: -10%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.range { width: 300px; }
+
+input[type=range] { 
+  height: 10px; 
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  color: #800080;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  margin-top: 0;
+}
 
 
 
